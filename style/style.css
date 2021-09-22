@@ -1,0 +1,75 @@
+body{
+    margin: auto 0;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: 2em;
+    font-family: poppins;
+    font-weight: bold;
+}
+.box{
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* grid-template-columns: 1/2fr 1/2fr; */
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+.box-child{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(170, 170, 170);
+}
+@media only screen and (min-width: 992px){
+    .box{
+        display: grid;
+        gap: 28px;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* border: 2px solid red; */
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .three{
+       
+        justify-content: center;
+        align-items: center;
+        
+        width: 95.01vw;
+    }
+}
+@media only screen and (max-width: 991px) and (max-width: 767px){
+    .box{
+        display: grid;
+        gap: 28px;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        /* grid-template-columns: 1/2fr 1/2fr; */
+        /* border: 2px solid red; */
+        padding: 20px;
+    }
+
+}
+.items{
+    display: flex;
+    background-color: rgb(216, 107, 107);
+    width: 60px;
+    justify-content: center;
+    margin-left: auto;
+    border: 1px solid black;
+}
+.sushi{
+    background-color: rgb(231, 236, 152);
+}
+.beef{
+    background-color: chocolate;
+}
+.chicken{
+    background-color: rgb(241, 132, 255);
+}
+p{
+    padding: 20px;
+}
